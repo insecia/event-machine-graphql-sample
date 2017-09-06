@@ -1,0 +1,42 @@
+{
+  unvalidatedUsers: userList(validated: false) {
+    userId
+    username
+    email
+    validated
+    validationCode
+    ownOrganizations {
+      orgaId
+      orgaName
+    }
+  }
+  userList {
+    userId
+    username
+    email
+    validated
+    validationCode
+    ownOrganizations {
+      orgaId
+      orgaName
+    }
+  }
+  organizationList {
+    orgaId
+    orgaName
+    owner {
+      userId
+      email
+      username
+    }
+    members {
+      userId
+      email
+    }
+    pendingInvitations {
+      userId
+      email
+    }
+  }
+}
+

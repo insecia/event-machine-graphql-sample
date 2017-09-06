@@ -5,7 +5,8 @@ This code is just a showcase and therefore neither save nor optimized.
 
 ## Usage
 
-Clone the repository and run the following command to start it using a docker container.
+Clone the repository and run npm install.
+Then just run the following command to start it using a docker container.
 ```
 docker run -it --rm --name yarn -v "$PWD":/usr/src/app -w /usr/src/app -p 4000:4000 --network=eventmachineskeleton_default node:latest yarn start
 ```
